@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<!-- thymeleaf need close this -->
+<title>Send params</title>
+</head>
+<body>
+
+	<ul>
+		<li><a th:href="@{/params/string(text='Saludo')}">Saludo</a></li>
+		<li><a th:href="@{/params/string(text='Que tal spring')}">Que
+				tal spring</a></li>
+
+		<li><a
+			th:href="@{/params/mix-param/(greeting='Hello word', number=10)}">Mix-params</a></li>
+			
+				<li><a
+			th:href="@{/params/mix-param-request/(greeting='Hello word', number=10)}">Mix-params request</a></li>
+	</ul>
+</body>
+</html>

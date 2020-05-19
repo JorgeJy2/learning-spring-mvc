@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" /> <!-- thymeleaf need close this -->
+<title th:text="${title}"></title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+	<h1 class="color-red">Hello spring!</h1>
+	<p th:text="${title}"></p>
+	<h2 class="color-blue">I'm blue</h2>
+	<img th:src="@{/images/spring.svg}" />
+</body>
+</html>

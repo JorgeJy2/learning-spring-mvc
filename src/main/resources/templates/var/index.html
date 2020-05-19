@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<ul>
+		<li>
+			<a th:href="@{/var/string/}+ 'Hi from spring'">/var/string/</a>
+		</li>
+		
+			<li>
+			<a th:href="@{/var/string/}+ 'Hi jorge'">/var/string/</a>
+		</li>
+		
+			<li>
+			<a th:href="@{/var/string/}+ 'Hi from spring' +'/6'">/var/string/number</a>
+		</li>
+	</ul>
+</body>
+</html>
